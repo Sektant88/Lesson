@@ -1,0 +1,5 @@
+First="hello world"
+Second="hello world"
+Thirth=input()
+print(First.upper()[0::2])
+print(Second.upper()[::-1])
