@@ -1,8 +1,11 @@
 SourceFile=open('pyton.txt','w')
 f=input()
-a=f[0:5]
-b=f[6:]
+f=input()
+f=f.split()
+a=f[0].upper()
+b=f[1].capitalize()
 c='%s,%s' %(b,a)
 d='{},{}'.format(a,b)
+d.split()
 e='!{0},{1}?'.format(a,b)
-print(f,a,b,c,d.swapcase(),e, sep='<<<>>>', file=SourceFile)
+print(f,a,b,c,d,e,sep='<<<>>>', file=SourceFile)
