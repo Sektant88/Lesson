@@ -8,10 +8,10 @@ def func():
             number = int(number)
         else:
             print('ошибка,это не число,заново!')
-        if number > secret:
-             print('число меньше загаданного')
-        elif number < secret:
-            print('число больше загаданного')
+        if number < secret:
+             print(' это число меньше загаданного')
+        elif number > secret:
+            print('это число больше загаданного')
         else:
             print(f"вы угадали число {secret}")
             break
