@@ -15,7 +15,7 @@ def func_2():
     print(result)
 
 
-def decorator(func,func_2,):
+def decorator(func,func_2):
     def wrapper():
         from datetime import datetime
         time = datetime.now()
