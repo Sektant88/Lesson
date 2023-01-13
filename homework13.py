@@ -14,16 +14,17 @@ def func_2():
         number -= 1
     print(result)
 
-def decorator():
+
+def decorator(func,func_2,):
     def wrapper():
         from datetime import datetime
         time = datetime.now()
         func()
-        durationTimed_1 = datetime.now() - time
-        print('время 1-ой ф-кции: ',durationTimed_1)
+        durationTimed_1 = datetime.now()  - time
+        print('время ф-кции: ',durationTimed_1)
         func_2()
         durationTimed_2 = datetime.now() - time
         print('время 2-ой ф-кции: ',durationTimed_2)
-    return wrapper()
-decorator()
 
+    return wrapper()
+decorator(func,func_2)
