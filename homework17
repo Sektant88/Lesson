@@ -1,0 +1,6 @@
+in console
+pip install requests == 2.26.0
+pip install lxml
+pip freeze > requitments.txt
+ pip uninstall -r  requitments.txt
+  pip install -r requitments.txt
