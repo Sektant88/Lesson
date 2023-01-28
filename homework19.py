@@ -40,10 +40,12 @@ class truck(auto):
     def move(self):
         print('attetion')
         super().move()
+
     def load(self):
         time.sleep(1)
         print('load')
         time.sleep(1)
+
 Man=truck("Man",2014,'bizon',234)
 print(Man.brand+' '+Man.mark+' '+Man.age.__str__()+' '+'max load: ',Man.max_load.__str__())
 Man.move()
