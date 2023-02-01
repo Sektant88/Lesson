@@ -49,11 +49,14 @@ class Circle(Point):
     def area(self):
         return math.pi * (self.radius**2)
 
-    def __sub__(self, other):
-        radius = self.radius - other.radius
+        def __sub__(self, other):
+        x=self.x-other.x
+        y=self.y-other.y
+        radius = abs(self.radius-other.radius)
         if radius==0:
-            return Point(self.x,self.y)
-        return radius
+            return Point(x,y)
+        else:
+            return Circle(radius,x,y)
 seba=Circle(5,20,10)
 seba1=Circle(12,13,5)
 sera=seba.__sub__(seba1)
