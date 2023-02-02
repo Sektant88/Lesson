@@ -36,6 +36,7 @@ delo=String('fdas')
 loft=String([2,'ddfs',''])
 plus_4 = delo + loft
 print(plus_4)
+print(type(plus_2))
 
 
 
@@ -48,6 +49,7 @@ ser=String('new balan7ce')
 res=String('7')
 minus_1 = ser-res
 print(minus_1)
+print(type(minus))
 
 
 
