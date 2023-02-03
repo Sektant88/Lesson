@@ -2,55 +2,35 @@ class String(str):
     Stroka:str
 
     def __init__(self,Stroka:str):
-        self.Stroka = Stroka
+        self.Stroka = str(Stroka)
 
-    def __str__(self):
-        Stroka=self.Stroka+self.Stroka
-        return Stroka
-
+    def __add__(self, other):
+        other = str(other)
+        return String(self.Stroka+other)
+    
     def __sub__(self, other):
-        return self.Stroka.replace(other,'')
+        other = str(other)
+        return String(self.Stroka.replace(other, '', 1))
 
-
-rob = String('vasya')
-bob = String('pupkin')
-plus = rob + bob
-print(plus)
-
-dar = String('new')
-gap = String(86)
-plus_1 = dar+gap
-print(plus_1)
-
-tema = String('six')
-arem = String(None)
-plus_2 = tema + arem
-print(plus_2)
-
-sam = String('zero')
-ams = String(True)
-plus_3 = sam + ams
-print(plus_3)
-
-delo=String('fdas')
-loft=String([2,'ddfs',''])
-plus_4 = delo + loft
-print(plus_4)
-print(type(plus_2))
+print(String('New') + String(890))
+print(String(1234) + 5678)
+print(String('New') + 'castle')
+print(String('New') + 77 )
+print(String('New') + True)
+print(String('New') + ['s', ' ', 23])
+print(String('New') + None)
+print(type(String('New') + None))
 
 
 
-god = String('new balance')
-dog = String('bala')
-minus = god-dog
-print(minus)
-
-ser=String('new balan7ce')
-res=String('7')
-minus_1 = ser-res
-print(minus_1)
-print(type(minus))
-
+print(String('New bala7nce') - 7)
+print(String('New balance') - 'bal')
+print(String('New balance') - 'Bal')
+print(String('pineapple apple pine') - 'apple')
+print(String('New balance') - 'apple')
+print(String('NoneType') - None)
+print(String(55678345672) - 7)
+print(type(String('NoneType') - None))
 
 
 
