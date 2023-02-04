@@ -19,8 +19,8 @@ class Myclass():
         return b.a**2
 
     @classmethod
-    def chopper(self):
-        return self.a-20
+    def chopper(cls):
+        return cls.a-20
 
 
 
