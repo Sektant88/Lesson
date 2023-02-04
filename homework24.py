@@ -1,6 +1,5 @@
 class Myclass():
-    a:int
-
+    a=100
     def __init__(self,a:int):
         self.a=a
 
@@ -19,6 +18,10 @@ class Myclass():
     def sanji(b):
         return b.a**2
 
+    @classmethod
+    def chopper(self):
+        return self.a-20
+
 
 
 
@@ -36,6 +39,9 @@ print(plus)
 
 gg=fjd / obj
 print(gg)
+
+c=obj.chopper()
+print(c)
 
 
 
